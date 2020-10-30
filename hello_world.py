@@ -2,6 +2,6 @@
 
 # print(sys.argv[1])
 
-text = input("Bitte Text eingeben: ")
+prices = [{"ppm": 234234},{"ppm":1234}]
 
-print(text)
+print(prices[0:1])

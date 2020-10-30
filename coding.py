@@ -1,5 +1,5 @@
 def minPrice(filename, outputfile) :
-    f = open(filename, mode="r", encoding="utf-8")
+    f = open("level1/"+filename, mode="r", encoding="utf-8")
     prices = []
     for line in f :
         prices.append(line.replace("\n", ""))
@@ -19,7 +19,7 @@ def minPrice(filename, outputfile) :
         
 
 
-    f = open(outputfile, mode="w", encoding="utf-8")
+    f = open("level1/output/"+outputfile, mode="w", encoding="utf-8")
     f.write(str(keyminimumprice))
     f.close()
 
