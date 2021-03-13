@@ -18,6 +18,9 @@ class Passport():
     def __str__(self):
         return f"byr: {self.data['byr']}"
 
+    def uselessFunction(self):
+        return f"useless"
+
 # Daten laden und aufbereitung
 with open(file="advent2020/p04a_data.txt", mode="r", encoding="utf-8") as filedata :
     data = filedata.read().split("\n\n")
