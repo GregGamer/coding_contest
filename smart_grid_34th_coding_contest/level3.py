@@ -45,7 +45,6 @@ def default(filename, outputfile) :
     f.close()
 
 
-
     print(tasks)
 
 
@@ -54,7 +53,7 @@ def minPriceFromRange(prices, minRange, maxRange) :
     liste = prices[minRange:maxRange]
     for l in liste :
         if l['usedPower'] >= 5 :
-            liste.remove(l)
+            kiste.remove(l)
 
     minValue = min(x['ppm'] for x in liste)
     return prices.index(filter(lambda n: n.get('ppm') == minValue, prices)[0])
